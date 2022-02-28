@@ -1,7 +1,7 @@
 # chelsea-code's tmux configuration
 *More info on [tmux](https://github.com/tmux.)*
 
-# Setup
+## Setup
 1. Install zsh:  
 `sudo apt-get install zsh`  
 
@@ -18,3 +18,9 @@
 
 1. Run tmux:  
 `tmux`
+
+## Troubleshooting
+### You got an error about plugins when starting tmux
+You probably did not install tmux package manager correctly. (See step #2 above)
+### tmux automatically exits when you try to start it
+The path to zsh is probably not correct in the `.tmux.config` file. (See step #4 above)
