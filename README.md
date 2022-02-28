@@ -26,4 +26,4 @@ You probably did not install tmux package manager correctly. (See step #2 above)
 The path to zsh is probably not correct in the `.tmux.config` file. (See step #4 above)
 
 ## Colors
-This configuration uses [256 (Xterm)](https://www.ditig.com/256-colors-cheat-sheet) color codes.
+This configuration uses [256 (Xterm)](https://www.ditig.com/256-colors-cheat-sheet) colors.
