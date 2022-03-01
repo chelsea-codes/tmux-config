@@ -16,8 +16,20 @@
 
 1. Update the path to the zsh binary in the `set` command under the `default shell` comment. You can get the path by running `which zsh`.
 
-1. Run tmux:  
-   `tmux`
+1. Start (and name) a tmux session:  
+   `tmux new -s mysession`
+   
+   You can leave the session with:
+   `prefix+d` (`Ctrl+a+d`) or simply close the terminal application. (clicking the X of a Microsoft terminal application, for example)
+   
+   You can re-enter this session in the future with:  
+   `tmux a -t mysession`
+   
+   If you happen to close a session with the `exit` command, it will be terminated and you will need to create a new session.
+   
+   Use the command `tmux ls` to view all available sessions.
+   
+   For ease of usability, I set my terminal settings to run `tmux a -t mycoolsession || tmux new -s mycoolsession` when a new terminal is opened, just incase I accidentally terminate the session or dettach it unintentionally.
 
 1. If prompted to configure zsh, select option `(2) Populate your ~/.zshrc with...`.
 
@@ -28,8 +40,11 @@
 1. Set your oh my zsh theme to [one of these](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes) by updating the value for `ZSH_THEME=` in your user's .zshrc file. I recommend _ for this configuration.
 
 ## Changes to Default Key Bindings
+See this [cheat sheet](https://tmuxcheatsheet.com/) for default commands/key bindings.
 
 ### tmux Command Prefix
+*Note: When you use the prefix with key combinations, the prefix should not be held down while entering the key combinations.*  
+
 The default prefix for tmux commands is usually `Ctrl+b`. This configuration uses `Ctrl+a` because I find it more comfortable to use.
 
 For ultimate comfort, remap your `CAPSLOCK` key to `ESC` on tap and `Ctrl` on hold! (tmux does not seem to allow you to do this using tmux config, so it must be done at the OS level)
@@ -44,7 +59,7 @@ This configuration allows you to hold down shift with any key combination / mous
 Switch between tabs with `prefix+LeftOrRightArrowKey`(`Ctrl+a+ArrowKey`) or `prefix+TabNumber` (`Ctrl+a+TabNumber`).
 
 ### Splitting a Window Vertically / Horizontally
-Press `prefix+=` (`Ctrl+a+=`) to split horizontally or `prefix+|` (`Ctrl+a+Shift+\`) to split vertically.
+Press `prefix+-` (`Ctrl+a+-`) to split horizontally or `prefix+|` (`Ctrl+a+Shift+\`) to split vertically.
 
 ### Refreshing tmux Config
 Reload settings from `.tmux.conf` with `prefix+r` (`Ctrl+a+r`).
