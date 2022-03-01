@@ -1,9 +1,9 @@
 # chelsea-code's tmux Configuration
-*More info on [tmux](https://github.com/tmux.)*
 
 ## Setup
-1. Install tmux depending on [your platform](https://github.com/tmux/tmux/wiki/Installing).
-
+1. Install tmux depending on [your platform](https://github.com/tmux/tmux/wiki/Installing).  
+    *More info on [tmux](https://github.com/tmux.)*
+    
 1. Install zsh:  
     `sudo apt-get install zsh`  
 
