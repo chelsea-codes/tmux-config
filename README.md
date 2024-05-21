@@ -39,7 +39,7 @@
    `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
    *More info on [oh my zsh](https://ohmyz.sh/)*
    
-1. Set your oh my zsh theme to [one of these](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes) by updating the value for `ZSH_THEME=` in your user's .zshrc file. I recommend _ for this configuration.
+1. Set your oh my zsh theme to [one of these](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes) by updating the value for `ZSH_THEME=` in your user's .zshrc file. I recommend "avit" for this configuration. You may also need to uncomment the line near the top for exporting $PATH for these settings to kick in.
 
 ## Changes to Default Key Bindings
 See this [cheat sheet](https://tmuxcheatsheet.com/) for default commands/key bindings.
