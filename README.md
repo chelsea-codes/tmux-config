@@ -31,7 +31,12 @@
    
    Use the command `tmux ls` to view all available sessions.
    
-   For ease of usability, I set my terminal settings to run `tmux a -t mycoolsession || tmux new -s mycoolsession` when a new terminal is opened, or just add it to the end of my .bashrc file, just incase I accidentally terminate the session or dettach it unintentionally.
+   For ease of usability, I set my terminal settings to run `tmux a -t mycoolsession || tmux new -s mycoolsession` when a new terminal is opened, or add the following to the end of my .bashrc file, incase I accidentally terminate the session or dettach it unintentionally:
+```
+if [ ! "$TMUX" ]; then
+        tmux attach -t mycoolsession || tmux new -s mycoolsession
+fi
+```
 
 1. If prompted to configure zsh, select option `(2) Populate your ~/.zshrc with...`.
 
